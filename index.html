@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="difficulty-selector">
+            <button class="difficulty-btn" data-speed="200">初级</button>
+            <button class="difficulty-btn" data-speed="150">中级</button>
+            <button class="difficulty-btn" data-speed="100">高级</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="score">分数：<span id="scoreValue">0</span></div>
+        <div class="control-buttons">
+            <button id="startBtn">开始游戏</button>
+            <button id="pauseBtn" disabled>暂停游戏</button>
+            <button id="resumeBtn" style="display: none;">继续游戏</button>
+            <button id="endBtn" disabled>结束游戏</button>
+        </div>
+        <div class="scoreboard">
+            <h3>记分榜 - TOP 5</h3>
+            <div id="highScores"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html> 

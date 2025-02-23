@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+}
+
+.score {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.control-buttons {
+    margin: 20px 0;
+}
+
+.control-buttons button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.control-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#startBtn {
+    background-color: #4CAF50;
+}
+
+#pauseBtn {
+    background-color: #FFA500;
+}
+
+#resumeBtn {
+    background-color: #4CAF50;
+}
+
+#endBtn {
+    background-color: #ff4444;
+}
+
+#startBtn:hover:not(:disabled),
+#resumeBtn:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+#pauseBtn:hover:not(:disabled) {
+    background-color: #FF8C00;
+}
+
+#endBtn:hover:not(:disabled) {
+    background-color: #cc0000;
+}
+
+.difficulty-selector {
+    margin-bottom: 20px;
+}
+
+.difficulty-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.difficulty-btn.active {
+    background-color: #45a049;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.difficulty-btn:hover {
+    background-color: #45a049;
+}
+
+.scoreboard {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.scoreboard h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.score-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.score-item:last-child {
+    border-bottom: none;
+}
+
+.difficulty-scores {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.difficulty-scores h4 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.difficulty-scores:last-child {
+    margin-bottom: 0;
+}
+
+.scoreboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reset-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.reset-btn:hover {
+    background-color: #cc0000;
+} 
